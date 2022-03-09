@@ -4,11 +4,13 @@ The aim of this repository is to provide a reproducible deployment of a Gavo/Dac
 
 ### Requirements
 
-The requirement to run this is ansible which can be installed using a virtual environment like so:
+The requirement to run this is ansible which can best be installed using a virtual environment and the like so:
 
 ```python3 -m venv dachs-deploy```
 
-```python3 -m pip install ansible```
+```source ./dachs-deploy/bin/activate```
+
+```python3 -m pip install -r requirements.txt```
 
 For more information see [the ansible docs](https://docs.ansible.com/ansible/latest/installation_guide/index.html).
 
