@@ -2,13 +2,13 @@ all:
   children:
     dev_group_name:
       hosts:
-        #ip
+        0.0.0.0
       vars:
         admin_user: username
-        ansible_python_interpreter: /usr/bin/python3
+        ansible_python_interpreter: /usr/bin/python
     deploy_group_name:
       hosts:
-        #ip
+        0.0.0.0
       vars:
         admin_user: username
-        ansible_python_interpreter: /usr/bin/python3
+        ansible_python_interpreter: /usr/bin/python

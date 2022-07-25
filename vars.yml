@@ -1,9 +1,39 @@
 ---
-data_sources:
-  # Test data containing the required fields
-  arihip:
-    data_name: arihip
-    rd_url: "http://svn.ari.uni-heidelberg.de/svn/gavo/hdinputs/arihip/q.rd"
-    data_url: "http://dc.g-vo.org/arihip/q/cone/static/data.txt.gz"
-    checksum_algorithm: "md5"
-    data_checksum: "b98e1b44a0fce4c86f85ddad937a23fb"
+
+# Variables for controlling the data ingested into GAVO DaCHS
+data_source:
+  root_directory: fill-me
+  rd_url: fill-me
+  rd_name: fill-me
+  data_url: fill-me
+  data_directory: fill-me
+  data_name: fill-me
+  checksum: ""
+  run_rd_tests: false
+
+# Variables for controlling the installation of GAVO DaCHS and its configuration
+gavo_dachs_info:
+  version: 2.6+dfsg-1
+  fast_tb_location: /nvme
+  default_tb_location: /data
+  fast_tb_feedname: fastindex
+
+# Variables for site deployment
+site_details:
+  bind_address: 0.0.0.0
+  site_name: fill-me
+
+# Variables for site metadata
+meta_details:
+  # Authority required for publishing services
+  authority: fill-me
+  authority_shortname: fill-me
+  # Various pieces of metadata about the website and maintainer, can be left as
+  # placeholder if kept internal
+  publisher: fill-me
+  contact_name: fill-me
+  contact_address: fill-me
+  contact_email: fill@me
+  no_result_warning: Your query did not match any data.
+  creation_date: fill-me
+  site_description: fill-me
